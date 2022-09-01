@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="336.0" prefWidth="623.0" style="-fx-background-color: #a14c50;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crud.CrudController">
+   <children>
+      <TableView fx:id="tvtable" layoutX="224.0" layoutY="64.0" onMouseClicked="#mouseClicked" prefHeight="237.0" prefWidth="385.0" style="-fx-background-color: #ded52a;">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="42.0" text="ID" />
+          <TableColumn fx:id="colname" prefWidth="88.0" text="NAME" />
+            <TableColumn fx:id="coladdress" prefWidth="137.0" text="ADDRESS" />
+            <TableColumn fx:id="coltel" prefWidth="117.0" text="TELEPHONE" />
+        </columns>
+      </TableView>
+      <VBox alignment="CENTER_LEFT" layoutX="18.0" layoutY="30.0" prefHeight="199.0" prefWidth="100.0" spacing="20.0">
+         <children>
+            <Label text="ID" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold" size="12.0" />
+               </font></Label>
+            <Label text="NAME" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold" size="12.0" />
+               </font></Label>
+            <Label text="ADDRESS" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold" size="12.0" />
+               </font></Label>
+            <Label text="NUMBER" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold" size="12.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <VBox layoutX="116.0" layoutY="65.0" prefHeight="140.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <TextField fx:id="tfid" />
+            <TextField fx:id="tfname" />
+            <TextField fx:id="tfaddress" />
+            <TextField fx:id="tfnumber" />
+         </children>
+      </VBox>
+      <Button fx:id="btninsert" layoutX="22.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnClicked" text="INSERT" />
+      <Button fx:id="btnupdate" layoutX="87.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnClicked" text="UPDATE" />
+      <Button fx:id="btndelete" layoutX="162.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnClicked" text="DELETE" />
+      <Label layoutX="192.0" layoutY="9.0" prefHeight="43.0" prefWidth="240.0" text="LOG-IN FORM" textFill="#e8e1e1">
+         <font>
+            <Font name="Book Antiqua Bold" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
