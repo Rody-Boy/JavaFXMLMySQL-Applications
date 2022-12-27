@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="158.0" prefWidth="169.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.Controller">
+   <children>
+      <VBox alignment="CENTER" layoutX="-1.0" prefHeight="114.0" prefWidth="50.0" spacing="16.0">
+         <children>
+            <Label contentDisplay="CENTER" text="Amount" textAlignment="CENTER" />
+            <Label fx:id="sl" contentDisplay="CENTER" textAlignment="CENTER" />
+            <Label contentDisplay="CENTER" text="Tip" textAlignment="CENTER" />
+            <Label contentDisplay="CENTER" text="Total" textAlignment="CENTER" />
+         </children>
+      </VBox>
+      <VBox layoutX="59.0" layoutY="3.0" prefHeight="160.0" prefWidth="102.0" spacing="10.0">
+         <children>
+            <TextField fx:id="tfAmount" />
+            <Slider fx:id="slPercent" blockIncrement="5.0" max="30.0" value="15.0" />
+            <TextField fx:id="tfTip" />
+            <TextField fx:id="tfTotal" />
+            <Button fx:id="btnCalculate" mnemonicParsing="false" onAction="#calculate" prefHeight="25.0" prefWidth="109.0" text="Calculate" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
