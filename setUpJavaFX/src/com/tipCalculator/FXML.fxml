@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.tipCalculator.FXMLController">
+   <children>
+      <VBox layoutX="8.0" layoutY="6.0" prefHeight="122.0" prefWidth="100.0">
+         <children>
+            <Label text="amount" />
+            <Label text="\%" />
+            <Label text="t" />
+            <Label text="totl" />
+         </children>
+      </VBox>
+      <VBox layoutX="100.0" layoutY="8.0" prefHeight="122.0" prefWidth="100.0">
+         <children>
+            <TextField />
+            <Slider />
+            <TextField />
+            <TextField />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
